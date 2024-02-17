@@ -105,6 +105,8 @@ The dataset is loaded into SAS and explored for its structure, including variabl
 
 ### Influence Plots:
 - Visual representation of influential cases in the data.
+- 
+<img width="476" alt="Screenshot 2024-02-17 104044" src="https://github.com/adnanthedataanalyst/SAS_Binary-Logistic-Regression/assets/152249280/59797207-d85e-499d-a16d-51ae65d3f70d">
 
 ### Conclusion:
 The logistic regression analysis revealed significant predictors of student dropout, including application mode, course, tuition fees, scholarship holder status, age at enrollment, and curricular units. These findings highlight the importance of considering various factors when identifying at-risk students. By leveraging this predictive model, educational institutions can allocate resources more efficiently, implement early interventions, and provide targeted support to reduce dropout rates and enhance student success. Further research and refinement of the model could enhance its effectiveness in addressing the complex issue of student attrition.
