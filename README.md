@@ -4,7 +4,7 @@
 This project aims to develop a logistic regression model for predicting undergraduate student dropouts based on a dataset containing student demographics, academic performance, and socio-economic information. The goal is to create a robust predictive model that can assist educational institutions in allocating resources efficiently, implementing early interventions, and providing support to at-risk students.
 
 **Note**: 
-- [Excel file]
+- [Excel file](https://github.com/adnanthedataanalyst/SAS_Binary-Logistic-Regression/blob/main/Student%20Dropout.csv)
 - [SAS Output]
 
 ## Key Question
