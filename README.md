@@ -50,8 +50,10 @@ The dataset is loaded into SAS and explored for its structure, including variabl
 | 4.  | -2 Log L  | 5554.532       | 3366.896                 |
 
 ### Summary:
-- The AIC (Akaike Information Criterion) and SC (Schwarz Criterion) values are lower in the model with covariates, indicating better model fit compared to the intercept-only model.
-- The -2 Log L statistic is also lower in the model with covariates, further supporting its better fit.
+- The AIC (Akaike Information Criterion) and SC (Schwarz Criterion) values are measures used to compare the goodness-of-fit of statistical models. Lower values of AIC and SC indicate a better fit of the model. Typically, differences in AIC or SC greater than 2 indicate some evidence for one model over the other, and differences greater than 10 indicate strong evidence. In our analysis, the model with covariates (independent variables) has lower AIC (5556.532 vs. 3380.896) and SC (5562.927 vs. 3425.660) values compared to the model with only the intercept term, suggesting that the model with covariates fits the data better.
+
+- The -2 Log L statistic is another measure of the goodness-of-fit of a statistical model, specifically for logistic regression. Similar to AIC and SC, a lower -2 Log L value indicates a better fit of the model to the data. However, there is no universal threshold for what constitutes a low -2 Log L value, as it depends on the specific dataset and research context. In our analysis, the -2 Log L value for the model with covariates (3366.896) is lower than for the intercept-only model (5554.532), indicating that the model with covariates provides a better fit to the data.
+
 
 - Significance Threshold: p < 0.05
 
@@ -105,4 +107,4 @@ The dataset is loaded into SAS and explored for its structure, including variabl
 - Visual representation of influential cases in the data.
 
 ### Conclusion:
-- Factors such as application mode, course, tuition fees, scholarship status, age at enrollment, and curricular units are significantly associated with student dropout, suggesting potential interventions to reduce dropout rates.
+The logistic regression analysis revealed significant predictors of student dropout, including application mode, course, tuition fees, scholarship holder status, age at enrollment, and curricular units. These findings highlight the importance of considering various factors when identifying at-risk students. By leveraging this predictive model, educational institutions can allocate resources more efficiently, implement early interventions, and provide targeted support to reduce dropout rates and enhance student success. Further research and refinement of the model could enhance its effectiveness in addressing the complex issue of student attrition.
