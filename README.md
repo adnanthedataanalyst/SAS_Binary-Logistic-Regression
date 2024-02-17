@@ -105,7 +105,11 @@ The dataset is loaded into SAS and explored for its structure, including variabl
 
 ### Influence Plots:
 - Visual representation of influential cases in the data.
-- 
+<img width="475" alt="Screenshot 2024-02-17 104044" src="https://github.com/adnanthedataanalyst/SAS_Binary-Logistic-Regression/assets/152249280/cbe664b2-8b9d-4ee2-812b-b35add4d8782">
+
+<img width="474" alt="Screenshot 2024-02-17 104044" src="https://github.com/adnanthedataanalyst/SAS_Binary-Logistic-Regression/assets/152249280/09703ef1-2374-4ca6-a75b-234621b1af1c">
+
+  
 <img width="476" alt="Screenshot 2024-02-17 104044" src="https://github.com/adnanthedataanalyst/SAS_Binary-Logistic-Regression/assets/152249280/59797207-d85e-499d-a16d-51ae65d3f70d">
 
 ### Conclusion:
