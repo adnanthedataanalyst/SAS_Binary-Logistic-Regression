@@ -12,9 +12,9 @@ What factors contribute significantly to student dropout, and how can these fact
 
 ## Method
 ### Data Collection
-- **Data Source**: Kaggle dataset.
-- **Dataset Description**: This dataset, collected by experts from the VALORIZA Research Center and Polytechnic Institute of Portalegre, compiles information on students in diverse undergraduate degrees. It includes details from enrollment, such as academic path and socio-economic factors, as well as academic performance at the first and second semesters. The dataset is designed for building classification models to predict students' dropout and success at the end of the course duration.
-- **Code Description Integration**: Integrating Dataset Column Descriptions and Categories from Damiieibikun's GitHub repository appendix.
+- **Data Source**: [Kaggle dataset](https://www.kaggle.com/datasets/thedevastator/higher-education-predictors-of-student-retention).
+- **Dataset Description**: This dataset, collected by experts from the [VALORIZA Research Center and Polytechnic Institute of Portalegre](https://zenodo.org/records/5777340#.Y7FJotJBwUE), compiles information on students in diverse undergraduate degrees. It includes details from enrollment, such as academic path and socio-economic factors, as well as academic performance at the first and second semesters. The dataset is designed for building classification models to predict students' dropout and success at the end of the course duration.
+- **Code Description Integration:** Integrating Dataset Column Descriptions and Categories from Damiieibikun's GitHub repository appendix, found [here](https://github.com/Damiieibikun/Student-s-Dropout-Prediction-using-Supervised-Machine-Learning-Classifiers). This repository provides the missing information regarding the categorical labels used in the dataset.
 
 ### Data Loading and Exploration
 The dataset is loaded into SAS and explored for its structure, including variable names and data types. Subsequently, it is split into training and testing sets for model development and evaluation.
