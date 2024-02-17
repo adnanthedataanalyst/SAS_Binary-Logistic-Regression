@@ -5,7 +5,7 @@ This project aims to develop a logistic regression model for predicting undergra
 
 **Note**: 
 - [Excel file](https://github.com/adnanthedataanalyst/SAS_Binary-Logistic-Regression/blob/main/Student%20Dropout.csv)
-- [SAS Output]
+- [SAS Output](https://github.com/adnanthedataanalyst/SAS_Binary-Logistic-Regression/blob/main/Results_%20Binary%20Logistic%20Regression.pdf)
 
 ## Key Question
 What factors contribute significantly to student dropout, and how can these factors be leveraged to develop an accurate predictive model?
