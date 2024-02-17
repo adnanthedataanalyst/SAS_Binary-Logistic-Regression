@@ -15,26 +15,88 @@ What factors contribute significantly to student dropout, and how can these fact
 ### Data Loading and Exploration
 The dataset is loaded into SAS and explored for its structure, including variable names and data types. Subsequently, it is split into training and testing sets for model development and evaluation.
 
-## Binary Logistic Regression Analysis Results
-### Model Information:
-- **Data Set**: WORK.IMPORT
-- **Response Variable**: Dropout (levels: "No" and "Yes")
-- **Model**: Binary logistic regression
-- **Optimization Technique**: Fisher's scoring method
-- **Number of Observations**: 4424
 
-### Response Profile:
-- 1421 students dropped out ("Yes"), 3003 students did not ("No").
+```markdown
+# Logistic Regression predicting Student Dropout
 
-### Model Fit Statistics:
-- Lower AIC, SC, and -2 Log L statistics indicate better fit compared to the intercept-only model.
+## Model Information
+1. Data Set: WORK.IMPORT
+2. Response Variable: Dropout
+3. Number of Response Levels: 2
+4. Model: Binary Logit
+5. Optimization Technique: Fisher's Scoring
+6. Number of Observations Read: 4424
+7. Number of Observations Used: 4424
 
-### Parameter Estimates:
-- **Intercept**: Statistically significant (p < 0.0001)
-- **Application_Mode, Course, Tuition_fees_up_to_d, Scholarship_Holder, Age_At_Enrollment, Curricular_Units_2nd**: All predictor variables are statistically significant (p < 0.0001).
+### Summary:
+- The logistic regression model was built using data from WORK.IMPORT dataset to predict student dropout.
+- The response variable "Dropout" has two levels: "No" and "Yes".
+- Fisher's scoring method was utilized for model estimation, with all 4424 observations being used for analysis.
 
-### Odds Ratio Estimates:
-- Insights into the effects of predictor variables on the odds of dropout.
+## Response Profile
+|     | Ordered | Value | Dropout | Total |
+|-----|---------|-------|---------|-------|
+|     |         | No    | 3003    |       |
+| 1.  |         | Yes   | 1421    |       |
+
+### Summary:
+- The response profile shows that out of the 4424 students, 3003 did not drop out ("No") while 1421 did ("Yes").
+
+## Model Fit Statistics
+|     | Criterion | Intercept Only | Intercept and Covariates |
+|-----|-----------|----------------|--------------------------|
+| 2.  | AIC       | 5556.532       | 3380.896                 |
+| 3.  | SC        | 5562.927       | 3425.660                 |
+| 4.  | -2 Log L  | 5554.532       | 3366.896                 |
+
+### Summary:
+- The AIC (Akaike Information Criterion) and SC (Schwarz Criterion) values are lower in the model with covariates, indicating better model fit compared to the intercept-only model.
+- The -2 Log L statistic is also lower in the model with covariates, further supporting its better fit.
+
+- Significance Threshold: p < 0.05
+
+## Analysis of Maximum Likelihood Estimates
+|     | Parameter             | DF | Estimate | Standard Error | Wald Chi-Square | Pr > ChiSq |
+|-----|-----------------------|----|----------|----------------|-----------------|------------|
+| 5.  | Intercept             | 1  | 2.2842   | 0.2254         | 102.7241        | <.0001     |
+| 6.  | Application_Mode      | 1  | 0.0443   | 0.00927        | 22.8185         | <.0001     |
+| 7.  | Course                | 1  | 0.0919   | 0.0102         | 80.6283         | <.0001     |
+| 8.  | Tuition_fees_up_to_d  | 1  | -2.6607  | 0.1527         | 303.7729        | <.0001     |
+| 9.  | Scholarship_Holder    | 1  | -1.0240  | 0.1218         | 70.7151         | <.0001     |
+| 10. | Age_At_Enrollment     | 1  | 0.0373   | 0.00611        | 37.3544         | <.0001     |
+| 11. | Curricular_Units_2nd  | 1  | -0.2640  | 0.00962        | 752.9464        | <.0001     |
+
+### Summary:
+- The estimates represent the change in log odds of dropout associated with a one-unit change in the predictor variable, holding other variables constant.
+- All predictor variables are statistically significant (p < 0.05) in predicting student dropout.
+
+## Odds Ratio Estimates
+|     | Effect                | Point Estimate | 95% Wald Confidence Limits |
+|-----|-----------------------|----------------|-----------------------------|
+| 12. | Application_Mode      | 1.045          | 1.026 - 1.064               |
+| 13. | Course                | 1.096          | 1.075 - 1.119               |
+| 14. | Tuition_fees_up_to_d  | 0.070          | 0.052 - 0.094               |
+| 15. | Scholarship_Holder    | 0.359          | 0.283 - 0.456               |
+| 16. | Age_At_Enrollment     | 1.038          | 1.026 - 1.051               |
+| 17. | Curricular_Units_2nd  | 0.768          | 0.754 - 0.783               |
+
+### Summary:
+- Odds ratios provide insights into the magnitude and direction of the effects of predictor variables on the odds of dropout.
+- A one-unit increase in "Course" is associated with a 9.6% increase in the odds of dropout.
+
+## Association of Predicted Probabilities and Observed Responses
+- Percent Concordant: 87.5%
+- Somers' D: 0.750
+- Percent Discordant: 12.5%
+- Gamma: 0.751
+- Percent Tied: 0.0%
+- Tau-a: 0.327
+- Pairs: 4267263
+
+### Summary:
+- Concordance statistics indicate the predictive ability of the model.
+- A high concordance percentage and values close to 1 suggest a good predictive performance of the model.
+```
 
 ### Association of Predicted Probabilities and Observed Responses:
 - Concordance statistics indicate predictive ability.
