@@ -3,6 +3,10 @@
 ## Introduction
 This project aims to develop a logistic regression model for predicting undergraduate student dropouts based on a dataset containing student demographics, academic performance, and socio-economic information. The goal is to create a robust predictive model that can assist educational institutions in allocating resources efficiently, implementing early interventions, and providing support to at-risk students.
 
+**Note**: 
+[Excel file]
+[SAS Output]
+
 ## Key Question
 What factors contribute significantly to student dropout, and how can these factors be leveraged to develop an accurate predictive model?
 
